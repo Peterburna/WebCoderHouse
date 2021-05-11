@@ -1,0 +1,243 @@
+:root {
+    --blanco: #ffffff; 
+    --oscuro: #0e131f; 
+    --primario: #ff5964;
+    --secundario: #fbd87f; 
+    --gris: #757575; 
+  }
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    border: black 0px dotted;
+  }
+
+  html{ font-size: 62.5%;
+  }
+
+  body {
+    font-size: 16px;
+    font-family: roboto mono;
+    background-image: linear-gradient(to top, #DFE9F3 0%, var(--blanco) 100%);
+}
+.acordion {
+    background-color: red;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    background-color: var(--blanco);
+    color: orangered;
+    padding: 1rem 3rem 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    width: 90%;
+    text-align: center;
+    border: 1px black;
+    border: none;
+}
+@media (min-width: 768px) {  
+    .boton {
+        width: auto;
+    }
+}
+.boton:hover {
+    cursor: pointer;
+}
+.sombra {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/* Barra de Navegacion *//* Barra de Navegacion *//* Barra de Navegacion *//* Barra de Navegacion */
+.empresa{
+    font-size: 200px;
+}
+.logo{
+    display: block;
+    background-color: var(--oscuro);
+    color: orangered;
+    text-decoration: none;
+    height: 40px;
+    font-size: 40px;
+}
+.contenedor{
+    width: 120rem;
+    margin: 0 auto 0 auto; 
+}
+.nav-bg{
+    background-color: var(--oscuro); 
+}
+.navegacion-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.item {
+    justify-content: flex-end;
+    margin: 1px;
+}
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+.navegacion-principal a:hover {
+    background-color: var(--blanco);
+    color:orangered;
+}   
+
+/* Imagen de Presentacion *//* Imagen de Presentacion *//* Imagen de Presentacion *//* Imagen de Presentacion */
+.hero {
+    background-image: url(Media/warehouse.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.contenido-hero {
+    position: absolute;
+    background-color: rgb(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenido-hero h2,
+.contenido-hero p {
+    color: var(--blanco);
+}
+
+/* Servicios *//* Servicios *//* Servicios *//* Servicios *//* Servicios *//* Servicios *//* Servicios */
+@media (min-width: 768px) {  
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+        }
+    }
+    .servicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .servicio h3 {
+        color: orangered;
+        font-weight: normal;
+        text-align: center;
+    }
+    .servicio p {
+        line-height: 2;
+    }
+    .servicio .iconos {
+        height: 10rem;
+        width: 10rem;
+        background-color: var(--oscuro);
+        border-radius: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+/* Productos *//* Productos *//* Productos *//* Productos *//* Productos *//* Productos *//* Productos */
+.titulo {
+    color: orangered;
+    font-size: 2.5rem;
+}
+.nombrepc {
+    color: var(--oscuro);
+    font-weight: bolder;
+    text-decoration: none;
+    display: flex;
+}
+.caracteristica {
+      font-weight: bold;
+      color:#0e131f;  
+}
+.laptops {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.laptop-compus {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.compuPadre {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+}
+
+
+/* Formulario *//* Formulario *//* Formulario *//* Formulario *//* Formulario *//* Formulario *//* Formulario */
+.cuestionario {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.contacto {
+    border: #0e131f 1px ;
+    padding: 20px;
+    margin: 10px;
+}
+.formulario {
+    background-color: gray;
+    width: min( 60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.formulario fieldset {
+    border: none;
+}
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color:orangered;
+}
+.contenedor-campos {
+
+}
+.campo {
+    margin-bottom: 1rem;
+}
+.campo label {
+   color: var(--blanco);
+   font-weight: bold;
+   margin-bottom: .5rem;
+   display: block;
+}
+.input-text {
+    width: 90%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+.enviar .boton {
+    width: 90%;
+}

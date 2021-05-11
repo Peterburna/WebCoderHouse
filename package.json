@@ -1,0 +1,18 @@
+{
+  "name": "myweb",
+  "version": "1.0.0",
+  "description": "esta es mi web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/web-coderhouse.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "author": "pburna",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
